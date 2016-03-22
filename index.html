@@ -2,24 +2,25 @@
 <html>
 	<head>
 		<!-- important -->
-			<script id="test" type="text/javascript" src="scripts/thrixty_initialize.js"></script>
-			<link type="text/css" rel="stylesheet" href="style/thrixty_styles.css">
+			<script id="test" type="text/javascript" src="thrixty_init.js"></script>
 		<!-- /important -->
 	</head>
 	<body style="background: gray;">
 		<div style="width: 100%; max-width: 650px; margin: auto; border: 5px solid darkblue; background: white;">
 			<!-- important -->
-				<div
-					thrixty-zoom-mode="inbox_minimap"
-					thrixty-direction="forward"
-					thrixty-filelist-path-small="small_example.txt"
-					thrixty-filelist-path-large="large_example.txt"
+				<div id="thrixty_box_1" class="thrixty-player" tabindex="0"
 					thrixty-basepath="example/"
-					thrixty-seconds-per-turn="7"
-					class="thrixty-player"
-					id="thrixty_box_1"
-					tabindex="0"
-					style="outline: medium none;"
+					thrixty-filelist-path-small="small/Filelist.txt"
+					thrixty-filelist-path-large="large/Filelist.txt"
+					thrixty-cycle-duration="5"
+					thrixty-direction="forward"
+					thrixty-sensitivity-x="20"
+					thrixty-zoom-mode="inbox"
+					thrixty-zoom-control="progressive"
+					thrixty-position-indicator="minimap"
+					thrixty-outbox-position="right"
+					thrixty-autoplay="on"
+					thrixty-autoload="on"
 				></div>
 			<!-- /important -->
 		</div>
